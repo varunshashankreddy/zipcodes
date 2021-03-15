@@ -29,3 +29,16 @@ Your work will be evaluated against the following criteria:
 - Efficiency of the implementation
 - Design choices and overall code organization
 - Code quality and best practices
+
+
+
+# Java File Description:
+1) Application.java --> reads the input and drives the zipcode 
+2) Zipcode.java --> model to store the lower bound and upper bound of zipcode
+3) ZipcodeComparator.java --> To sort based on the lower bound of zipcode from the list
+4) ZipcodeProcessor.java --> validating the input and load them to linkedlist
+5) ZipcodeMerger.java --> Main logic that merges the zipcode ranges and returns the final list
+
+# Tests:
+1) Used DataFactory to generate data sets
+2) Wrote Junit tests to validate different scenarios  of input
