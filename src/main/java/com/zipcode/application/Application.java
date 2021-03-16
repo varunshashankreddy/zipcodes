@@ -7,6 +7,10 @@ import com.zipcode.model.Zipcode;
 import com.zipcode.util.ZipcodeMerger;
 import com.zipcode.util.ZipcodeProcessor;
 
+/**
+ * @author varun
+ * This class reads the input and drives the zip code
+ */
 public class Application {
   private static Scanner scan;
 
@@ -15,11 +19,11 @@ public class Application {
     String zipcodeRanges = scan.nextLine();
     ZipcodeProcessor zipcodeProcessor = new ZipcodeProcessor(zipcodeRanges);
     List<Zipcode> zipcodeList = zipcodeProcessor.stripZipcode();
-    ZipcodeMerger zipcode_merger = new ZipcodeMerger();
-    List<Zipcode> sortedZipCodeList = zipcode_merger.sortByLowerBounds(zipcodeList);
-    List<Zipcode> mergedZipcodeList = zipcode_merger.mergeZipcodes(sortedZipCodeList);
+    ZipcodeMerger zipcodeMerger = new ZipcodeMerger();
+    List<Zipcode> sortedZipCodeList = zipcodeMerger.sortByLowerBounds(zipcodeList);
+    List<Zipcode> mergedZipcodeList = zipcodeMerger.mergeZipcodes(sortedZipCodeList);
     for (Zipcode zipcode : mergedZipcodeList) {
-      System.out.println("[" + zipcode.getLower_bound() + "," + zipcode.getUpper_bound() + "]");
+      System.out.println("[" + zipcode.getLowerBound() + "," + zipcode.getUpperBound() + "]");
     }
 
   }

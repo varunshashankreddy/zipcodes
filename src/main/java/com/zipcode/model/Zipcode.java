@@ -1,28 +1,32 @@
 package com.zipcode.model;
 
+/**
+ * @author varun 
+ * This is model to store the lower bound and upper bound of zipcode
+ */
 public class Zipcode {
-  private int lower_bound;
-  private int upper_bound;
+	private int lowerBound;
+	private int upperBound;
 
-  public Zipcode(int lower_bound, int upper_bound) {
-    this.lower_bound = lower_bound;
-    this.upper_bound = upper_bound;
-  }
+	public Zipcode(int lowerBound, int upperBound) {
+		this.lowerBound = lowerBound;
+		this.upperBound = upperBound;
+	}
 
-  public int getLower_bound() {
-    return lower_bound;
-  }
+	public int getLowerBound() {
+		return lowerBound;
+	}
 
-  public void setLower_bound(int lower_bound) {
-    this.lower_bound = lower_bound;
-  }
+	public void setLowerBound(int lowerBound) {
+		this.lowerBound = lowerBound;
+	}
 
-  public int getUpper_bound() {
-    return upper_bound;
-  }
+	public int getUpperBound() {
+		return upperBound;
+	}
 
-  public void setUpper_bound(int upper_bound) {
-    this.upper_bound = upper_bound;
-  }
+	public void setUpperBound(int upperBound) {
+		this.upperBound = upperBound;
+	}
 
 }

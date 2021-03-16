@@ -35,7 +35,7 @@ public class ZipcodeMergerTest extends TestCase {
     ZipcodeMerger zipcode_merger = new ZipcodeMerger();
     List<Zipcode> sortedZipCodeList = zipcode_merger.sortByLowerBounds(zipcodeList);
     List<Zipcode> mergedZipcodeList = zipcode_merger.mergeZipcodes(sortedZipCodeList);
-    assertTrue(mergedZipcodeList.get(0).getUpper_bound() == 95006);
+    assertTrue(mergedZipcodeList.get(0).getUpperBound() == 95006);
   }
 
   public void testSortingBeforeMerging() {
